@@ -17,8 +17,8 @@ const projects = [
     description:
       "A personal portfolio site developed using React, Tailwind CSS, and Framer Motion for smooth UI transitions.",
     links: {
-      site: "https://portfolio-ansn.netlify.app/",
-      github: "https://github.com/Arsn1323/portfolio",
+      site: "https://harshitsingh2631.vercel.app/",
+      github: "https://github.com/harshita2631/portfolio",
     },
   },
    {
