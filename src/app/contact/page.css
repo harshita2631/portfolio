@@ -1,0 +1,182 @@
+.contact-section {
+  margin-top: 0;
+  padding-top: 0;
+  background: linear-gradient(135deg, #1b1b1b, #2e2e2e);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.portfolio-title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(90deg, #00c9ff, #92fe9d); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  margin-bottom: 2.5rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.portfolio-title::after {
+  content: '';
+  display: block;
+  width: 400px;
+  height: 4px;
+  background: linear-gradient(90deg, #00c9ff, #92fe9d); 
+  margin: 0.75rem auto 0;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact container */
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.contact-info {
+  flex: 1 1 400px;
+}
+
+.contact-info h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-info h3 span {
+  color: #c9a0ff;
+}
+
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1 1 150px;
+}
+
+.stat-box h4 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #c9a0ff;
+}
+
+.stat-box p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.contact-form h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #c9a0ff;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #a066ff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #7f4ae6;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 992px) {
+  .portfolio-title {
+    font-size: 2.5rem;
+  }
+  .portfolio-title::after {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .stats {
+    flex-direction: column;
+  }
+  .stat-box {
+    flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-title {
+    font-size: 2rem;
+  }
+  .portfolio-title::after {
+    width: 180px;
+  }
+  .contact-info h3 {
+    font-size: 24px;
+  }
+  .contact-form h4 {
+    font-size: 20px;
+  }
+  .stat-box h4 {
+    font-size: 22px;
+  }
+}

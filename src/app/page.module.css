@@ -1,4 +1,25 @@
-.page {
+/* @keyframes slideIn {
+  from { opacity: 0; transform: translateX(100px); }
+  to { opacity: 1; transform: translateX(0); }
+} */
+
+
+
+ /* background: linear-gradient(to right, #e0eafc, #cfdef3);
+  color: #333; */
+
+  /* background: linear-gradient(to right, #1f4037, #99f2c8); */
+
+
+
+
+
+
+
+
+
+
+/* .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -108,7 +129,7 @@ a.secondary {
 }
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
@@ -164,4 +185,6 @@ a.secondary {
   .logo {
     filter: invert();
   }
-}
+} */
+
+

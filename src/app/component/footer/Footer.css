@@ -1,0 +1,151 @@
+/* ===== NAVBAR ===== */
+.navbar-header {
+  width: 100%;
+  height: 65px;
+  color: white;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  background: linear-gradient(90deg, #62405b, #5555bf);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #00c9ff, #92fe9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+.navbar-right ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar-right ul li a {
+  text-decoration: none;
+  background: linear-gradient(90deg, #00c9ff, #92fe9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar-right ul li a:hover {
+  background-color: #92fe9d;
+  color: #1a1a1a;
+  box-shadow: 0 2px 8px #92fe9d;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-right ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(90deg, #62405b, #5555bf);
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .navbar-right ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: linear-gradient(90deg, hsla(270, 94%, 25%, 1) 0%, hsla(158, 94%, 49%, 1) 100%);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #320e52;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #c5b9b9;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #00f7ff;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #c084fc;
+}
+
+.footer-note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+  .footer h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a {
+    font-size: 1.3rem;
+    margin: 0 8px;
+  }
+}
