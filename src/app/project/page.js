@@ -28,7 +28,7 @@ const projects = [
       "A responsive real-time chat app using the MERN stack and Socket.IO for live messaging.",
     links: {
       site: "https://chat-application-7cae.onrender.com",
-      github: "https://github.com/Arsn1323/Chat-App",
+      github: "https://github.com/harshita2631/Chat-Application",
     },
   },
   // {
