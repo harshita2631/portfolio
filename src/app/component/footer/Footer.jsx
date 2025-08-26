@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub, Fgmail } from "react-icons/fa";
 import "./Footer.css"; // Optional CSS file
 export default function Footer() {
   return (
@@ -13,11 +13,11 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/harshita-singh2631" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/harshita2631/" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="mailto:harshita@example.com">
-            <FaEnvelope />
+          <a href="mailto:hs8031703@gmail.com">
+            <Fgmail />
           </a>
         </div>
 
