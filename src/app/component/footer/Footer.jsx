@@ -13,7 +13,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/harshita-singh2631" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/harshita2631/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/harshita2631" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
           <a href="mailto:hs8031703@gmail.com">
