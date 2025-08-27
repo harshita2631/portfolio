@@ -71,28 +71,64 @@
 }
 
 /* Responsive */
+/* Drawer Styles for Mobile */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(90deg, #00c9ff, #92fe9d); 
+  padding-top: 4rem;
+  transition: right 0.3s ease, transform 0.3s ease;
+  z-index: 1050;
+  box-shadow: -4px 0 8px rgba(0,0,0,0.3);
+  transform: translateX(0);
+}
+
+.drawer.open {
+  right: 0;
+  transform: translateX(-10px); /* slight push effect */
+}
+
+.drawer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.drawer ul li {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #444;
+}
+
+.drawer ul li a {
+  text-decoration: none;
+  color:  #0d4f14;
+  font-size: 1.1rem;
+  display: block;
+}
+
+/* Overlay when drawer is open */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(2px); /* subtle blur effect */
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 0.8rem 1rem;
-  }
-
-  .navbar-right ul {
-    position: absolute;
-    top: 65px;
-    right: 0;
-    background: linear-gradient(90deg, #62405b, #5555bf);
-    flex-direction: column;
-    width: 200px;
-    padding: 1rem;
-    gap: 1rem;
-    display: none;
-  }
-
-  .navbar-right ul.show {
-    display: flex;
-  }
-
   .hamburger {
     display: flex;
   }
+
+  .navbar-right {
+    display: none; /* hide desktop links on mobile */
+  }
 }
+
